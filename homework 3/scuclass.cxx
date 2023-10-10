@@ -46,13 +46,9 @@ namespace coen79 {
     cout << "No student found with provided id." << endl;
   }
 
-  const Student& SCUClass::list() {
+  const Student* SCUClass::list() {
     // Postcondition: List students in the class.
-    if (next >= length) {
-      return NoStudent;
-    }
-
-    return students[next++];
+    return students;
   }
 
   int SCUClass::size() const {

@@ -34,7 +34,7 @@ namespace coen79 {
     // MEMBER FUNCTIONS:
     void addStudent(Student);
     void erase(int);
-    const Student& list();
+    const Student* list();
 
     // CONSTANT MEMBER FUNCTIONS
     int size() const;
