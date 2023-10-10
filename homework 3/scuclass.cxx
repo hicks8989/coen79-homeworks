@@ -1,3 +1,11 @@
+/*
+ * Name: Eric Hicks
+ * Email: ehicks2@scu.edu
+ *
+ * Assignment: Container.
+ * 2 of 4: SCU Container class implementation.
+ */
+
 #include <iostream>
 #include "scuclass.h"
 
@@ -52,7 +60,7 @@ namespace coen79 {
     return length;
   }
 
-  ostream& operator<<(ostream& os, const SCUClass & scuClass) {
+  ostream& operator<<(ostream& os, const SCUClass& scuClass) {
     // Postcondition: Prints out the SCU class information.
 
     for (int i = 0; i < scuClass.size(); i++) {

@@ -1,3 +1,10 @@
+/*
+ * Name: Eric Hicks
+ * Email: ehicks2@scu.edu
+ *
+ * Assignment: Container.
+ * 1 of 4: SCU Container class header file.
+ */
 #include <string>
 
 using namespace std;
@@ -12,7 +19,7 @@ namespace coen79 {
     Student(int student_id, string student_name) : id{student_id}, name{student_name} {};
 
     // OVERLOAD OPERATORS:
-    friend ostream& operator<<(ostream& os, const Student &);
+    friend ostream& operator<<(ostream& os, const Student&);
   };
 
   class SCUClass {
@@ -33,6 +40,6 @@ namespace coen79 {
     int size() const;
 
     // OVERLOAD OPERATORS:
-    friend ostream& operator<<(ostream& os, const SCUClass &);
+    friend ostream& operator<<(ostream& os, const SCUClass&);
   };
 }
