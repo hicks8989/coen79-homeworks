@@ -8,7 +8,12 @@ namespace coen79 {
     // Precondition: The student is not already present in the class. Additionally
     // there is enough room to add the student to the class.
     // Postcondition: The student is added to the students member in the class.
-    if (length == CAPACITY) return;
+    if (length == CAPACITY) {
+      cout << "SCU Class is at capacity." << endl;
+      cout << "Please remove a student before adding new ones to the class." << endl;
+
+      return;
+    }
 
     // Checks if student already exists.
     for (int i = 0; i < length; i++) {
@@ -21,7 +26,6 @@ namespace coen79 {
   void SCUClass::erase(int id) {
     // Precondition: The size of the class is greater than 0.
     // Postcondition: The student is removed from the class.
-
     for (int i = 0; i < length; i++) {
       if (students[i].id != id) continue;
 
@@ -30,6 +34,8 @@ namespace coen79 {
       length--;
       return;
     }
+
+    cout << "No student found with provided id." << endl;
   }
 
   const Student& SCUClass::list() {
@@ -50,7 +56,7 @@ namespace coen79 {
     // Postcondition: Prints out the SCU class information.
 
     for (int i = 0; i < scuClass.size(); i++) {
-      cout << scuClass.students[i] << endl;
+      cout << i + 1 << ": " << scuClass.students[i] << endl;
     }
 
     return os;
