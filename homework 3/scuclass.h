@@ -1,4 +1,3 @@
-#include <iostream>
 #include <string>
 
 using namespace std;
@@ -9,6 +8,9 @@ namespace coen79 {
     Student(int, string);
     int id;
     string name;
+
+    // OVERLOAD OPERATORS:
+    friend ostream& operator<<(ostream& os, const Student &);
   };
 
   class SCUClass {
@@ -24,7 +26,10 @@ namespace coen79 {
     void erase(int);
     void list();
 
+    // CONSTANT MEMBER FUNCTIONS
+    int size() const;
+
     // OVERLOAD OPERATORS:
-    
+    friend ostream& operator<<(ostream& os, const SCUClass &);
   };
 }
