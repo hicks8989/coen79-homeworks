@@ -2,11 +2,12 @@
 #include "scuclass.h"
 
 namespace coen79 {
+  static const Student NoStudent;
+
   void SCUClass::addStudent(Student student) {
     // Precondition: The student is not already present in the class. Additionally
     // there is enough room to add the student to the class.
     // Postcondition: The student is added to the students member in the class.
-
     if (length == CAPACITY) return;
 
     // Checks if student already exists.
@@ -14,7 +15,7 @@ namespace coen79 {
       if (student.id == students[i].id) return;
     }
 
-    students[length++] = student;
+    students[length++] = Student(student);
   }
 
   void SCUClass::erase(int id) {
@@ -31,8 +32,13 @@ namespace coen79 {
     }
   }
 
-  void SCUClass::list() {
-    // Postcondition: Students 
+  const Student& SCUClass::list() {
+    // Postcondition: List students in the class.
+    if (next >= length) {
+      return NoStudent;
+    }
+
+    return students[next++];
   }
 
   int SCUClass::size() const {

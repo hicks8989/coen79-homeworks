@@ -5,9 +5,11 @@ using namespace std;
 namespace coen79 {
   class Student {
     public:
-    Student(int, string);
     int id;
     string name;
+
+    // CONSTRUCTOR:
+    Student(int student_id, string student_name) : id{student_id}, name{student_name} {};
 
     // OVERLOAD OPERATORS:
     friend ostream& operator<<(ostream& os, const Student &);
@@ -15,8 +17,9 @@ namespace coen79 {
 
   class SCUClass {
     private:
-    const static int CAPACITY = 30;
+    static const int CAPACITY = 30;
     int length;
+    int next;
 
     public:
     Student students[CAPACITY];
@@ -24,7 +27,7 @@ namespace coen79 {
     // MEMBER FUNCTIONS:
     void addStudent(Student);
     void erase(int);
-    void list();
+    const Student& list();
 
     // CONSTANT MEMBER FUNCTIONS
     int size() const;
