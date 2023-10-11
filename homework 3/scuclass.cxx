@@ -65,6 +65,11 @@ namespace coen79 {
   ostream& operator<<(ostream& os, const SCUClass& scuClass) {
     // Postcondition: Prints out the SCU class information.
 
+    if (scuClass.size() == 0) {
+      cout << "Class is currently empty." << endl;
+      return;
+    }
+
     for (int i = 0; i < scuClass.size(); i++) {
       cout << i + 1 << ": " << scuClass.students[i] << endl;
     }
