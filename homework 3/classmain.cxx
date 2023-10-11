@@ -7,6 +7,8 @@
  */
 
 #include <iostream>
+#include <fstream>
+#include <sstream>
 #include "scuclass.h"
 
 using namespace coen79;
@@ -16,6 +18,8 @@ int main() {
   // Creates SCU Class.
   SCUClass coen79;
   Student eric(1629357, "Eric");
+  fstream datafile;
+  string line;
 
   // Student gets added.
   coen79.addStudent(eric);
@@ -31,11 +35,22 @@ int main() {
   // Student is not in class and can't be removed.
   coen79.erase(1629357);
 
-  // Adds 30 students.
-  for (int i = 0; i <= 30; i++) {
-    Student student(i, "New Student");
+  // Opens data file for read operations.
+  datafile.open("./datafile.txt", ios::in);
+
+  // Adds 30 students + 1 more to test capacity.
+  while (getline(datafile, line)) {
+    istringstream ss(line);
+    int id; string name;
+
+    ss >> id >> name;
+    Student student(id, name);
+
+    cout << "Currently adding " << student;
     coen79.addStudent(student);
   }
+
+  cout << coen79;
 
   return EXIT_SUCCESS;
 }

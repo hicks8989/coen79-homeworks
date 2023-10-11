@@ -48,7 +48,7 @@ namespace coen79 {
 
   const Student* SCUClass::list() {
     // Postcondition: Returns a copy of the students in the class.
-    Student studentsCopy[length];
+    Student* studentsCopy = new Student[length];
 
     for (int i = 0; i < length; i++) {
       studentsCopy[i] = Student(students[i]);
@@ -67,11 +67,10 @@ namespace coen79 {
 
     if (scuClass.size() == 0) {
       cout << "Class is currently empty." << endl;
-      return;
     }
 
     for (int i = 0; i < scuClass.size(); i++) {
-      cout << i + 1 << ": " << scuClass.students[i] << endl;
+      cout << i + 1 << ": " << scuClass.students[i];
     }
 
     return os;

@@ -16,8 +16,8 @@ namespace coen79 {
     string name;
 
     // CONSTRUCTOR:
-    Student();
-    Student(int student_id, string student_name) : id{student_id}, name{student_name} {};
+    Student(): id(0), name("") {};
+    Student(int student_id, string student_name): id{student_id}, name{student_name} {};
 
     // OVERLOAD OPERATORS:
     friend ostream& operator<<(ostream& os, const Student&);
