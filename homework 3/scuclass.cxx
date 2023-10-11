@@ -47,8 +47,14 @@ namespace coen79 {
   }
 
   const Student* SCUClass::list() {
-    // Postcondition: List students in the class.
-    return students;
+    // Postcondition: Returns a copy of the students in the class.
+    Student studentsCopy[length];
+
+    for (int i = 0; i < length; i++) {
+      studentsCopy[i] = Student(students[i]);
+    }
+
+    return studentsCopy;
   }
 
   int SCUClass::size() const {

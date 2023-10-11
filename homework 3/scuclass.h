@@ -16,6 +16,7 @@ namespace coen79 {
     string name;
 
     // CONSTRUCTOR:
+    Student();
     Student(int student_id, string student_name) : id{student_id}, name{student_name} {};
 
     // OVERLOAD OPERATORS:
