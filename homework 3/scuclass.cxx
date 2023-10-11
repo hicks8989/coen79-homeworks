@@ -10,7 +10,14 @@
 #include "scuclass.h"
 
 namespace coen79 {
-  static const Student NoStudent;
+
+  SCUClass::SCUClass(const SCUClass& scuClass) {
+    for (int i = 0; i < scuClass.size(); i++) {
+      students[i] = Student(scuClass.students[i]);
+    }
+
+    length = scuClass.size();
+  }
 
   void SCUClass::addStudent(Student student) {
     // Precondition: The student is not already present in the class. Additionally

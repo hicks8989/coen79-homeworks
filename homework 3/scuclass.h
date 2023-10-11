@@ -27,10 +27,13 @@ namespace coen79 {
     private:
     static const int CAPACITY = 30;
     int length;
-    int next;
 
     public:
     Student students[CAPACITY];
+
+    // CONSTRUCTOR:
+    SCUClass(): length(0) {};
+    SCUClass(const SCUClass&);
 
     // MEMBER FUNCTIONS:
     void addStudent(Student);

@@ -25,12 +25,24 @@ int main() {
   coen79.addStudent(eric);
   cout << coen79;
 
+  // Creates copy of coen79.
+  SCUClass coen20(coen79);
+
+  cout << coen20;
+
+  // Creates list.
+  const Student* students = coen79.list();
+  cout << "Printing students from list: " << students[0];
+
   // Student fails to be added.
   coen79.addStudent(eric);
 
   // Student gets removed.
   coen79.erase(1629357);
   cout << coen79;
+
+  // Checks coen20 to ensure student was not removed.
+  cout << coen20;
 
   // Student is not in class and can't be removed.
   coen79.erase(1629357);
@@ -51,6 +63,13 @@ int main() {
   }
 
   cout << coen79;
+
+  students = coen79.list();
+  cout << "Printing students list: " << endl;
+
+  for (int i = 0; i < coen79.size(); i++) {
+    cout << students[i];
+  }
 
   return EXIT_SUCCESS;
 }
