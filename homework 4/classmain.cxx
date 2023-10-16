@@ -28,6 +28,7 @@ int main() {
   // Creates copy of coen79.
   SCUClass coen20(coen79);
 
+  cout << "Here!";
   cout << coen20;
 
   // Creates list.
@@ -48,7 +49,7 @@ int main() {
   coen79.erase(1629357);
 
   // Opens data file for read operations.
-  datafile.open("./datafile.txt", ios::in);
+  datafile.open("./400students.txt", ios::in);
 
   // Adds 30 students + 1 more to test capacity.
   while (getline(datafile, line)) {
@@ -70,18 +71,6 @@ int main() {
   for (int i = 0; i < coen79.size(); i++) {
     cout << students[i];
   }
-
-  // Delete a student from the middle of the list.
-  coen79.erase(25);
-  cout << coen79;
-
-  // Delete a student from the end of the list.
-  coen79.erase(29);
-  cout << coen79;
-
-  // Delete a student from the beginning of the list.
-  coen79.erase(1);
-  cout << coen79;
 
   return EXIT_SUCCESS;
 }
