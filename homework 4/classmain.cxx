@@ -2,7 +2,7 @@
  * Name: Eric Hicks
  * Email: ehicks2@scu.edu
  *
- * Assignment: Container.
+ * Assignment: Container with pointer.
  * 4 of 4: SCU Container main file.
  */
 
@@ -49,7 +49,7 @@ int main() {
   coen79.erase(1629357);
 
   // Opens data file for read operations.
-  datafile.open("./400students.txt", ios::in);
+  datafile.open("./testdata.txt", ios::in);
 
   // Adds 30 students + 1 more to test capacity.
   while (getline(datafile, line)) {

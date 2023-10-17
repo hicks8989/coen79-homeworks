@@ -2,7 +2,7 @@
  * Name: Eric Hicks
  * Email: ehicks2@scu.edu
  *
- * Assignment: Container.
+ * Assignment: Container with pointer.
  * 3 of 4: Student class implementation.
  */
 

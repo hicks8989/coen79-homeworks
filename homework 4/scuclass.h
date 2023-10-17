@@ -2,7 +2,7 @@
  * Name: Eric Hicks
  * Email: ehicks2@scu.edu
  *
- * Assignment: Container.
+ * Assignment: Container with pointer.
  * 1 of 4: SCU Container class header file.
  */
 #include <iostream>
