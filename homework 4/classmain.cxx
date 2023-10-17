@@ -28,7 +28,6 @@ int main() {
   // Creates copy of coen79.
   SCUClass coen20(coen79);
 
-  cout << "Here!";
   cout << coen20;
 
   // Creates list.
