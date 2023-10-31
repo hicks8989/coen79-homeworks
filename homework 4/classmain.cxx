@@ -27,7 +27,6 @@ int main() {
 
   // Creates copy of coen79.
   SCUClass coen20(coen79);
-
   cout << coen20;
 
   // Creates list.
@@ -70,6 +69,14 @@ int main() {
   for (int i = 0; i < coen79.size(); i++) {
     cout << students[i];
   }
+
+  // Erase last student:
+  coen79.erase(476076);
+  cout << coen79;
+
+  // Erase first student:
+  coen79.erase(282819);
+  cout << coen79;
 
   return EXIT_SUCCESS;
 }
