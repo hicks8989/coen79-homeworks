@@ -1,3 +1,10 @@
+/*
+ * Name: Eric Hicks
+ * Email: ehicks2@scu.edu
+ *
+ * Assignment: Container with STL.
+ * 2 of 5: SCU Container header file.
+ */
 #include <iostream>
 #include "student.h"
 

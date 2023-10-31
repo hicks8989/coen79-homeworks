@@ -1,3 +1,10 @@
+/*
+ * Name: Eric Hicks
+ * Email: ehicks2@scu.edu
+ *
+ * Assignment: Container with STL.
+ * 5 of 5: SCU Student implementation file.
+ */
 #include "student.h"
 
 namespace coen79 {

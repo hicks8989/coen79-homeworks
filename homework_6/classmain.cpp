@@ -2,8 +2,8 @@
  * Name: Eric Hicks
  * Email: ehicks2@scu.edu
  *
- * Assignment: Container with pointer.
- * 4 of 4: SCU Container main file.
+ * Assignment: Container with STL.
+ * 1 of 5: SCU Container main file.
  */
 
 #include <iostream>
