@@ -10,7 +10,11 @@ namespace coen79 {
       return;
     }
 
-    students.push_back(student);
+    try {
+      students.push_back(student);
+    } catch(bad_alloc) {
+      cout << "Failed to allocate memory for new student." << endl;
+    }
   }
 
   void SCUClass::erase(int id) {
@@ -43,6 +47,9 @@ namespace coen79 {
 
   // Operators:
   Student SCUClass::operator[](int pos) const {
+    // Precondition: The provided position is non negative and in range.
+    // Postcondition: Returns the element at the provided index.
+    assert(pos >= 0 && pos < students.size());
     return students[pos];
   }
 
