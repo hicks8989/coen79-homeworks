@@ -1,5 +1,9 @@
 /*
- * Name: Sin-Yaw Wang
+ * Name: Eric Hicks
+ * Email: ehicks2@scu.edu
+ *
+ * Assignment: Container with STL and inheritance.
+ * 2 of 6: SCU Container header file.
  */
 #include "scuperson.h"
 #include <vector>

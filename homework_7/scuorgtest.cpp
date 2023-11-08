@@ -1,3 +1,10 @@
+/*
+ * Name: Eric Hicks
+ * Email: ehicks2@scu.edu
+ *
+ * Assignment: Container with STL and inheritance.
+ * 5 of 6: SCU Person test file.
+ */
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -20,7 +27,7 @@ namespace coen79 {
 
     // Opens data file for read operations.
     datafile.open(filename, std::ios::in);
-    // Adds students from datafile.
+    // Adds scu people from datafile.
     while (std::getline(datafile, line)) {
       std::istringstream ss(line);
       char cmd; int id;
@@ -51,14 +58,20 @@ namespace coen79 {
   }
 
   int testCase1() {
-    SCUOrg students, staff;
+    SCUOrg students, staff, org;
 
-    // Reads in student and staff files:
+    // Reads in student file::
     std::cout << "Reading students:" << std::endl;
     readFile(STUDENT_FILE, students, true);
 
+    // Reads in staff file:
     std::cout << "Reading staff:" << std::endl;
     readFile(STAFF_FILE, staff, false);
+
+    // Reads in student and staff file:
+    std::cout << "Reading in students and staff:" << std::endl;
+    readFile(STUDENT_FILE, org, true);
+    readFile(STAFF_FILE, org, false);
 
     return EXIT_SUCCESS;
   }

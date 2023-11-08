@@ -1,3 +1,10 @@
+/*
+ * Name: Eric Hicks
+ * Email: ehicks2@scu.edu
+ *
+ * Assignment: Container with STL and inheritance.
+ * 3 of 6: SCU Person implementation file.
+ */
 #include <iostream>
 #include "scuperson.h"
 

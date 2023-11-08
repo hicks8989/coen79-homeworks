@@ -2,8 +2,8 @@
  * Name: Eric Hicks
  * Email: ehicks2@scu.edu
  *
- * Assignment: Container with STL.
- * 3 of 5: SCU container implemntation file.
+ * Assignment: Container with STL and inheritance.
+ * 1 of 6: SCU Container implementation file.
  */
 #include <iostream>
 #include "scuorg.h"
