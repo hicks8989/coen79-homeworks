@@ -1,0 +1,31 @@
+Staff Records: 22
+A 389619 Grayson TA
+A 364176 Brielle Professor
+A 297636 Caroline Staff
+A 328194 Ryleigh Staff
+A 403763 Brielle Admin
+A 219433 Sadie Staff
+A 307677 Aiden TA
+A 282484 Juliana Staff
+A 109810 Mackenzie Admin
+A 126101 Jordan Staff
+A 296239 Sophia Professor
+A 449993 Vivian Staff
+A 126372 Natalie Admin
+A 374460 Kennedy Professor
+A 400563 Bailey Lecturer
+A 152397 Matthew Admin
+A 211611 Aubrey TA
+A 230975 Catherine TA
+A 280883 Jake Staff
+A 281118 Graham TA
+A 302059 Nicholas Professor
+A 187480 Theodore Admin
+L
+X 364176
+X 297636
+X 328194
+X 403763
+X 126372
+X 152397
+L
